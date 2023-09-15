@@ -2,8 +2,7 @@
 #include <string.h>
 
 int main(){
-    int zip;
-    char first[20], last[20], address[48], city[32], state[20];
+    char first[20], last[20], address[48], city[32], state[20], zip[10];
 
     printf("First: ");
     fgets(first, 19, stdin);
@@ -26,11 +25,12 @@ int main(){
     state[strcspn (state, "[\r\n]")] = '\0'; //replace the newline char with null character
 
     printf ("Zip: ");
-    scanf ("%d", &zip);
+    fgets(state, 19, stdin);
+    state[strcspn (state, "[\r\n]")] = '\0'; //replace the newline char with null character
 
     printf("\n%s %s\n", first, last);
     printf("%s\n", address);
-    printf("%s, %s %d\n", city, state, zip);
+    printf("%s, %s  %s\n", city, state, zip);
 
     return 0;
 }

@@ -4,12 +4,12 @@ def main():
     address = str(input("Address: "))
     city = str(input("City: "))
     state = str(input("State: "))
-    zipcode = int(input("Zip: "))
+    zipcode = str(input("Zip: "))
 
     print()
     print(first, last)
     print(address)
-    print(city + ", " + state, zipcode)
+    print(city + ", " + state, " " + zipcode)
 
 if __name__ == "__main__":
     main()
