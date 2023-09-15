@@ -18,6 +18,6 @@ public class Prog1part3{
 
         ms = track;
 
-        System.out.println("minute(s): " + min + "\nsecond(s): " + sec + "\nmilliseconds: " + ms);
+        System.out.println("Minute(s): " + min + "\nSecond(s): " + sec + "\nMilliseconds: " + ms);
     }
 }
