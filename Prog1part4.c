@@ -20,7 +20,7 @@ int main(){
     cents = total % 100;
     dollars = (total - cents) / 100;
 
-    printf("Amount: $%d.%d\n", dollars, cents);
+    printf("Amount: %d.%02d\n", dollars, cents);
 
     return 0;
 }

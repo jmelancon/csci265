@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main(){
@@ -20,7 +21,8 @@ int main(){
     cents = total % 100;
     dollars = (total - cents) / 100;
 
-    cout << "Amount: $" << dollars << "." << cents << endl;
+    cout << "Amount: " << dollars << ".";
+    cout << std::setw(2) << std::setfill('0') << cents << endl; //Cents formatting
 
     return 0;
 }

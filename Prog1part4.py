@@ -8,7 +8,7 @@ def main():
     cents = total % 100
     dollars = (total - cents) // 100
 
-    print(f'Amount: ${dollars}.{cents}')
+    print(f'Amount: {dollars}.{cents:02d}')
 
 if __name__ == "__main__":
     main()

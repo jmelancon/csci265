@@ -23,6 +23,6 @@ public class Prog1part4{
         cents = total % 100;
         dollars = (total - cents) / 100;
 
-        System.out.println("Amount: $" + dollars + "." + cents);
+        System.out.println("Amount: " + dollars + "." + String.format("%02d", cents));
     }
 }
