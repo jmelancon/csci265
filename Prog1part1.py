@@ -6,10 +6,12 @@ def main():
     state = str(input("State: "))
     zipcode = str(input("Zip: "))
 
-    print()
-    print(first, last)
+    print("\n" + first, end=" ")
+    print(last)
     print(address)
-    print(city + ", " + state, " " + zipcode)
+    print(city, end=", ")
+    print(state, end="  ")
+    print(zipcode)
 
 if __name__ == "__main__":
     main()

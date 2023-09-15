@@ -25,8 +25,8 @@ int main(){
     state[strcspn (state, "[\r\n]")] = '\0'; //replace the newline char with null character
 
     printf ("Zip: ");
-    fgets(state, 19, stdin);
-    state[strcspn (state, "[\r\n]")] = '\0'; //replace the newline char with null character
+    fgets(zip, 9, stdin);
+    zip[strcspn (zip, "[\r\n]")] = '\0'; //replace the newline char with null character
 
     printf("\n%s %s\n", first, last);
     printf("%s\n", address);

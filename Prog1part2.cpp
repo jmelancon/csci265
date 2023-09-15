@@ -2,8 +2,7 @@
 using namespace std;
 
 int main(){
-    int zip;
-    string first, last, address, city, state;
+    string first, last, address, city, state, zip;
 
     cout << "First: ";
     getline (cin, first);
@@ -23,7 +22,7 @@ int main(){
     cout << "Zip: ";
     cin >> zip;
 
-    cout << endl << first << " " << last << endl << address << endl << city << ", " << state << " " << zip << endl;
+    cout << endl << first << " " << last << endl << address << endl << city << ", " << state << "  " << zip << endl;
     
     return 0;
 }

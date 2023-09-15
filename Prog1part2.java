@@ -5,8 +5,7 @@ public class Prog1part2{
       Scanner keyboard;
       keyboard = new Scanner(System.in);
       
-      String first, last, address, city, state;
-      int zip;
+      String first, last, address, city, state, zip;
 
       System.out.print("First: ");
       first = keyboard.nextLine();
@@ -24,11 +23,11 @@ public class Prog1part2{
       state = keyboard.nextLine();
 
       System.out.print("Zip: ");
-      zip = keyboard.nextInt();
+      zip = keyboard.nextLine();
 
       System.out.println("\n" + first + " " + last + "\n" + 
                          address + "\n" +
-                         city + ", " + state + " " + zip);
+                         city + ", " + state + "  " + zip);
    }
 }
 

@@ -4,9 +4,9 @@ def main():
     address = str(input("Address: "))
     city = str(input("City: "))
     state = str(input("State: "))
-    zipcode = int(input("Zip: "))
+    zipcode = str(input("Zip: "))
 
-    print(f'\n{first} {last}\n{address}\n{city}, {state} {zipcode}')
+    print(f'\n{first} {last}\n{address}\n{city}, {state}  {zipcode}')
 
 if __name__ == "__main__":
     main()
