@@ -15,7 +15,7 @@ int main(){
 
     ms = track;
 
-    cout << min << " minute(s)\n" << sec << " second(s)\n" << ms << " milliseconds\n";
+    cout << "minute(s): " << min << "\nsecond(s): " << sec << "\nmilliseconds: " << ms;
 
     return 0;
 }

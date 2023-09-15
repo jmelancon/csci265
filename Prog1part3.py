@@ -9,7 +9,7 @@ def main():
 
     milli = track
 
-    print(f'{minu} minute(s)\n{seco} second(s)\n{milli} milliseconds')
+    print(f'minute(s): {minu}\nsecond(s): {seco}\nmilliseconds: {milli}')
 
 if __name__ == "__main__":
     main()

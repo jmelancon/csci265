@@ -15,7 +15,8 @@ int main(){
 
     ms = track;
 
-    printf("%d minute(s)\n%d second(s)\n%d milliseconds\n", min, sec, ms);
+    printf("minutes(s): %d\nsecond(s): %d\nmilliseconds: %d\n", min, sec, ms);
+    //printf("%d minute(s)\n%d second(s)\n%d milliseconds\n", min, sec, ms);
 
     return 0;
 }
