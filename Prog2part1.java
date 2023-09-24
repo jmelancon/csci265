@@ -5,7 +5,6 @@ public class Prog2part1{
       Scanner keyboard;
       keyboard = new Scanner(System.in);
 
-      System.out.print("For example:\n");
       int scoreCount, earnedPoints, totalPoints, perfScores, curScore, curTot;
       float average, perc;
       char grade;

@@ -3,7 +3,6 @@
 using namespace std;
 
 int main(){
-    cout << "For example:" << endl;
     int scoreCount, earnedPoints, totalPoints, perfScores, curScore, curTot;
     float average, perc;
     string grade;

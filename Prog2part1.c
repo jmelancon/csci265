@@ -2,7 +2,6 @@
 #include <string.h>
 
 int main(){
-    printf("For example:\n");
     int scoreCount, earnedPoints, totalPoints, perfScores, curScore, curTot;
     float average, perc;
     char grade;

@@ -1,6 +1,4 @@
 def main():
-    print("For example:")
-    
     scoreCount = 0
     earnedPoints = 0
     totalPoints = 0
