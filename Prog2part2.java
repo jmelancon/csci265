@@ -6,7 +6,7 @@ public class Prog2part2{
         keyboard = new Scanner(System.in);
 
         char printChar;
-        int x, y;
+        int x, y, i, j;
         
         System.out.print("Enter width: ");
         x = keyboard.nextInt();
@@ -19,11 +19,15 @@ public class Prog2part2{
 
         System.out.print("\n");
 
-        for(int i=0; i<y; i++){
-            for (int j=0; j<x; j++){
+        i = 0;
+        while(i < y){
+            j = 0;
+            while(j < x){
                     System.out.print(printChar);
+                    j += 1;
             }
             System.out.print("\n");
+            i += 1;
         }
     }
 }

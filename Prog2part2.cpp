@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     char printChar;
-    int x, y;
+    int x, y, i, j;
     
     cout << "Enter width: ";
     cin >> x;
@@ -15,11 +15,15 @@ int main(){
     cin >> printChar;
 
     cout << endl;
-
-    for(int i=0; i<y; i++){
-        for (int j=0; j<x; j++){
+    
+    i = 0;
+    while(i < y){
+        j = 0;
+        while(j < x){
                 cout << printChar;
+                j++;
         }
         cout << endl;
+        i++;
     }
 }

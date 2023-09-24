@@ -3,7 +3,7 @@
 
 int main(){
     char printChar;
-    int x, y;
+    int x, y, i, j;
     
     printf("Enter width: ");
     scanf("%d", &x);
@@ -16,10 +16,14 @@ int main(){
 
     printf("\n");
 
-    for(int i=0; i<y; i++){
-        for (int j=0; j<x; j++){
+    i = 0;
+    while(i < y){
+        j = 0;
+        while(j < x){
                 printf("%c", printChar);
+                j++;
         }
         printf("\n");
+        i++;
     }
 }

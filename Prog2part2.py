@@ -5,10 +5,14 @@ def main():
 
     print()
 
-    for i in range(y):
-        for j in range(x):
+    i = 0
+    while (i < y):
+        j = 0
+        while (j < x):
             print(printChar, end="")
+            j += 1
         print()
+        i += 1
 
 if __name__ == "__main__":
     main()
