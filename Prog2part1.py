@@ -20,13 +20,19 @@ def main():
 
     print()
     
-    if (totalPoints != 0): average = (float(earnedPoints) / float(totalPoints)) * 100
-    else: average = 0
+    if (totalPoints != 0): 
+        perc = (float(earnedPoints) / float(totalPoints)) * 100
+        average = float(earnedPoints) / float(scoreCount)
+    else: 
+        perc = 0
+        average = 0.0
     
-    if (average >= 90.0): grade = 'A'
-    elif (average >= 80.0): grade = 'B'
-    elif (average >= 70.0): grade = 'C'
-    elif (average >= 60.0): grade = 'D'
+
+
+    if (perc >= 90.0): grade = 'A'
+    elif (perc >= 80.0): grade = 'B'
+    elif (perc >= 70.0): grade = 'C'
+    elif (perc >= 60.0): grade = 'D'
     else: grade = 'F'
 
 
