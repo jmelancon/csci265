@@ -1,5 +1,6 @@
 #include <iostream>
-#include <iomanip>
+#include <iomanip> //Changing cout formatting stuff
+
 using namespace std;
 
 int main(){
@@ -41,7 +42,7 @@ int main(){
     cout << endl << "Number of scores: " << right << setfill(' ') << setw(6) << scoreCount << endl;
     cout << "Total points: " << right << setfill(' ') << setw(10) << earnedPoints << endl;
     cout << "Total possible: " << right << setfill(' ') << setw(8) << totalPoints << endl;
-    cout << "Average: " << setprecision(5) << showpoint << right << setfill(' ') << setw(15) << average << endl;
+    cout << "Average: " << setprecision(3) << fixed << showpoint << right << setfill(' ') << setw(15) << average << endl;
     cout << "Grade: " << right << setfill(' ') << setw(17) << grade << endl;
     cout << "Perfect scores: " << right << setfill(' ') << setw(8) << perfScores << endl;
 }
