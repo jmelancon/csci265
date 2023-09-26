@@ -3,7 +3,7 @@
 
 int main(){
     int scoreCount, earnedPoints, totalPoints, perfScores, curScore, curTot;
-    float average, perc;
+    float average;
     char grade;
     
     scoreCount = 0;
@@ -31,17 +31,15 @@ int main(){
 
     printf("\n");
     
-    if (totalPoints != 0) { 
-        perc = ((float) earnedPoints / (float) totalPoints) * 100;
-        average = (float) earnedPoints / (float) scoreCount;
-    }
-    else { average = 0; perc = 0; }
-     
-    if (perc >= 90.0) { grade = 'A'; }
-    else if (perc >= 80.0) { grade = 'B'; }
-    else if (perc >= 70.0) { grade = 'C'; }
-    else if (perc >= 60.0) { grade = 'D'; }
+    if (totalPoints != 0) { average = ((float) earnedPoints / (float) totalPoints) * 100; }
+    else { average = 0; }
+    
+    if (average >= 90.0) { grade = 'A'; }
+    else if (average >= 80.0) { grade = 'B'; }
+    else if (average >= 70.0) { grade = 'C'; }
+    else if (average >= 60.0) { grade = 'D'; }
     else { grade = 'F'; }
+
 
     printf("Number of scores: %6d\n", scoreCount);
     printf("Total points: %10d\n", earnedPoints);
