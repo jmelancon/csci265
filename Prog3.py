@@ -30,7 +30,7 @@ def militaryToRegularTime(militaryTime):
     hours = (militaryTime // 100) % 12
     hours = 12 if hours == 0 else hours
     ampm = "AM" if militaryTime < 1200 else "PM"
-    return f"{hours:02d}:{minutes:02d} {ampm}"
+    return f"{hours}:{minutes:02d} {ampm}"
 
 def main():
     print("Hello Python")
