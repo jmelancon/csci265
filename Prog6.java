@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.ArrayList;
+
 public class Prog6 { 
     public static int totalCredits(HashMap<String, Integer> students){
         /*
@@ -26,6 +27,9 @@ public class Prog6 {
     }
 
     public static ArrayList<String> classesByCredits(HashMap<String, Integer> students, int credits){
+        /*
+         * Return a list of classes that have X credits from the students dict.
+         */
         ArrayList<String> outList = new ArrayList<String>();
         for(String course : students.keySet()){
             if(students.get(course) == credits){
@@ -36,17 +40,26 @@ public class Prog6 {
     }
 
     public static boolean isPartTime(HashMap<String, Integer> students){
+        /*
+         * Return a t/f value for if the student has less than 12 credits.
+         */
         return totalCredits(students) < 12;
     }
 
     public static int numOfClasses(HashMap<String, Integer> students){
+        /*
+         * Return the number of courses a student is taking given the students dict.
+         */
         return students.keySet().toArray().length;
     }
 
     public static int lowerLevelCredits(HashMap<String, Integer> students){
+        /*
+         * Return the number of lower level courses given the students dict.
+         */
         int count = 0;
         for(String course : students.keySet()){
-            if (Integer.parseInt(course.split(" ")[1]) > 299){
+            if (Integer.parseInt(course.split(" ")[1]) < 300){
                 count += students.get(course);
             }
         }
@@ -54,6 +67,12 @@ public class Prog6 {
     }
 
     public static ArrayList<String> sortClasses(String[] courses){
+        /*
+         * Awful function to sort the list of course keys.
+         * I found that doing compareTo() would sort numbers in reverse
+         * order, so I wrote this function to sort the courses.
+         */
+
         // Get list with each department
         ArrayList<String> depts = new ArrayList<String>();
         int count = 0;
@@ -82,6 +101,7 @@ public class Prog6 {
         // Sort each course for each department
         ArrayList<String> outList = new ArrayList<String>();
         for(int i = 0; i < arrDepts.length; i++){
+            // Find courses that match the selected department
             int countTwo = 0;
             ArrayList<String> myCourses = new ArrayList<String>();
             for(String s : courses){
@@ -90,6 +110,8 @@ public class Prog6 {
                     count++;
                 }
             }
+            
+            // Sort the courses by course number
             String[] selCourses = myCourses.toArray(new String[countTwo]);
             for(int j = 1; j < selCourses.length; j++){
                 while (j > 0){
@@ -105,6 +127,8 @@ public class Prog6 {
                     }
                 }
             }
+
+            // Throw courses into the output list
             for(String s : selCourses){
                 outList.add(s);
             }
